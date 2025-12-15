@@ -1,0 +1,71 @@
+.darkJumbotron {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.774);
+}
+
+.wrapper {
+    padding: 50px 50px;
+}
+
+.darkBackground {
+    /* background-color: rgb(126, 1, 1); */
+    background-color: rgb(255, 255, 255);
+}
+
+.headerContainer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.column {
+    flex: 1;
+}
+
+.textContainer {
+    text-align: center;
+    text-align: right;
+    justify-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    /* padding: 0 70px; */
+}
+
+.imageContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.imageProperty {
+    width: 420px;
+    height: 420px;
+    border-radius: calc(infinity * 1px);
+}
+
+.arrow {
+    position: relative;
+    border:white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.jobContainer {
+    display: flex;
+    margin-top: 50px;
+}
+
+.card {
+
+}
