@@ -28,34 +28,41 @@
         </div>
     </section>
 
-    <!-- Job -->
+    <!-- Services -->
     <section class="h-screen darkBackground wrapper">
-        <h1 class="text-4xl">See my project below!</h1>
+        <h1 class="text-4xl">Hover to see my services below!</h1>
         <div class="jobContainer grid grid-cols-3 gap-10">
-            <div class="max-w-sm rounded overflow-hidden shadow-lg">
-                <img src="img/arthur-track.jpg">
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">Survival & Wilderness Tracking</div>
-                    <p>Tracked targets and survived hostile environment accross. </p>
-                    <h3 class="font-bold pt-3">Skills:</h2>
+            <!-- New card test -->
+            <div class="card">
+                <div class="image-box">
+                    <img src="img/arthur-track.jpg" />
+                </div>
+                <div class="content">
+                    <h2 class="font-bold text-2xl">Survival & Wilderness Tracking</h2>
+                    <p>Tracked targets and survived hostile environment accross.</p><br>
+                    <h2 class="font-bold">Skills:</h2>
                     <p>Tracking · Hunting · Environmental Awareness</p>
                 </div>
             </div>
-            <div class="max-w-sm rounded overflow-hidden shadow-lg">
-                <img src="img/arthur-escort2.jpg">
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">Protection & Escort Missions</div>
-                    <p>Secured high-assets and protected key individuals in volatile situations.</p>
-                    <h3 class="font-bold pt-3">Skills:</h2>
+            <div class="card">
+                <div class="image-box">
+                    <img src="img/arthur-escort2.jpg" />
+                </div>
+                <div class="content">
+                    <h2 class="font-bold text-2xl">Protection & Escort Missions</h2>
+                    <p>Secured high-assets and protected key individuals in volatile situations.</p><br>
+                    <h2 class="font-bold">Skills:</h2>
                     <p>Situational Awareness · Defense · Decision Making</p>
                 </div>
             </div>
-            <div class="max-w-sm rounded overflow-hidden shadow-lg">
-                <img src="img/arthur-fight.jpg">
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">Close-Combat Engagements</div>
-                    <p>Handled direct confrontations with precision and controlled aggresion.</p>
-                    <h3 class="font-bold pt-3">Skills:</h2>
+            <div class="card">
+                <div class="image-box">
+                    <img src="img/arthur-fight.jpg" />
+                </div>
+                <div class="content">
+                    <h2 class="font-bold text-2xl">Close-Combat Engagements</h2>
+                    <p>Handled direct confrontations with precision and controlled aggresion.</p><br>
+                    <h2 class="font-bold">Skills:</h2>
                     <p>Markmanship · Reflexes · Tactical Movement</p>
                 </div>
             </div>
