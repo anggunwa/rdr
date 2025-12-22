@@ -1,6 +1,12 @@
 
 /* JUMBOTRON */
 
+@import "tailwindcss";
+
+@theme {
+    --font-script: "Nanum Pen Script", cursive;
+}
+
 .darkJumbotron {
     position: absolute;
     bottom: 0;
@@ -66,11 +72,15 @@
 
 /* SERVICE */
 
-.jobContainer {
+.serviceBG {
+    background-color: rgb(255, 246, 246);
+}
+
+.serviceContainer {
     display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     justify-items: center;
     margin-top: 50px;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: calc(var(--spacing) * 10);
 }
 
@@ -134,4 +144,66 @@
 .card:hover .content {
     opacity: 1;
     transform: translate(-50%, -50%) translateY(0);
+}
+
+.skillContainer {
+    display: flex;
+    /* grid-template-columns: repeat(5, minmax(0, 1fr)); */
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: center;
+    margin-top: 50px;
+    font-family: "Nanum Pen Script", cursive;
+    font-size:larger;
+    padding: 0 80px;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.skillContainer li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100px;
+    margin: 0 50px;
+    padding: 20px 0px;
+    color: rgb(0, 0, 54);
+}
+
+.aboutBG {
+        background-color: rgb(255, 255, 255);
+}
+
+.aboutContainer {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.aboutMeBio {
+    text-align: right;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-right: 40px;
+}
+
+.aboutMeImg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    width: 80%;
+}
+
+.aboutImg {
+    height: 75%;
+    border-radius: 10px;
+}
+
+.contactBG {
+    background-color: rgb(255, 246, 246);
 }
