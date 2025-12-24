@@ -73,7 +73,7 @@
 /* SERVICE */
 
 .serviceBG {
-    background-color: rgb(255, 246, 246);
+    background-color: rgb(255, 222, 222);
 }
 
 .serviceContainer {
@@ -205,5 +205,70 @@
 }
 
 .contactBG {
-    background-color: rgb(255, 246, 246);
+    background-color: rgb(255, 222, 222);
+}
+
+.contactContainer {
+    display: flex;
+    margin-top: 50px;
+}
+
+.contactText {
+    width: 50%;
+    padding-right: 70px;
+}
+
+.socialIcon {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialIcon li {
+    display: flex;
+    padding-inline: 30px;
+    padding-block: 30px;
+    color: rgb(17, 15, 121);
+}
+
+.contactForm {
+    width: 50%;
+    align-items: center;
+}
+
+.contactLabel {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 3xl;
+    font-weight: bold;
+    line-height: 1.4;
+    color: #101828;
+    @media (prefers-color-scheme: dark) {
+        color: #d1d5dc; 
+    }
+}
+
+.contactInput {
+    background-color: #f9fafb;
+    border-color: #d1d5dc;
+    color: #101828;
+    font-size: 14px;
+    line-height: 1.4;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+
+.formButton {
+    background-color: #b91b1b;
+    border-color: #d1d5dc;
+    padding-block: 12px;
+    padding-inline: 12px;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
 }
