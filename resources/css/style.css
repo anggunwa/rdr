@@ -1,7 +1,7 @@
 
 /* JUMBOTRON */
 
-@import "tailwindcss";
+/* @import "tailwindcss"; */
 
 @theme {
     --font-script: "Nanum Pen Script", cursive;
@@ -19,8 +19,10 @@
 }
 
 .wrapper {
-    padding: 50px 50px;
+    max-width: 1080px;
+    margin: 0px auto;
 }
+
 
 .darkBackground {
     /* background-color: rgb(126, 1, 1); */
@@ -29,8 +31,6 @@
 
 .headerContainer {
     display: flex;
-    align-content: center;
-    justify-content: center;
     height: 100%;
 }
 
@@ -62,19 +62,50 @@
     border-radius: calc(infinity * 1px);
 }
 
-.arrow {
-    position: relative;
-    border:white;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
+@media (max-width: 980px) {
+    .textContainer {
+        text-align: center;
+    }
+    .textContainer h1{
+        font-size: 30px;
+    }
+    .textContainer p{
+        font-size: 25px;
+    }
+    .imageProperty{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 780px) {
+
+    .headerContainer {
+        justify-content: center;
+    }
+
+    .textContainer {
+        justify-content: end;
+        padding-bottom: 30px;
+    }
+
+    .textContainer h1{
+        font-size: 25px;
+    }
+    .textContainer p{
+        font-size: 20px;
+    }
+
+    .imageContainer {
+        justify-content: start;
+    }
+
+    .headerContainer{
+        flex-direction: column;
+    }
 }
 
 /* SERVICE */
-
-.serviceBG {
-    background-color: rgb(255, 222, 222);
-}
 
 .serviceContainer {
     display: grid;
@@ -146,6 +177,48 @@
     transform: translate(-50%, -50%) translateY(0);
 }
 
+@media screen and (max-width: 1200px) {
+    .serviceContainer {
+        padding-inline: 20px;
+    }
+    .card {
+        width: 300px;
+    }
+
+}
+
+@media (max-width: 980px) {
+    .card {
+        width: 250px;
+    }
+    .content h2 {
+        font-size: 15px;
+    }
+    .content p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 780px) {
+    .serviceBG {
+        height: fit-content;
+        padding-block: 40px;
+    }
+    .serviceBG h1 {
+        font-size: 25px;
+    }
+    .serviceContainer {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+/* SKILLS */
+
+.skillsBG {
+    align-content: center;
+    background-color: rgb(255, 222, 222);
+}
+
 .skillContainer {
     display: flex;
     /* grid-template-columns: repeat(5, minmax(0, 1fr)); */
@@ -154,7 +227,7 @@
     justify-content: center;
     margin-top: 50px;
     font-family: "Nanum Pen Script", cursive;
-    font-size:larger;
+    font-size: larger;
     padding: 0 80px;
     flex-basis: 0;
     flex-grow: 1;
@@ -165,14 +238,47 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 100px;
+    width: 50px;
     margin: 0 50px;
     padding: 20px 0px;
     color: rgb(0, 0, 54);
 }
 
+@media screen and (max-width: 1200px) {
+
+
+}
+
+@media (max-width: 980px) {
+    .skillContainer li {
+        width: 30px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 780px) {
+    .skillsBG {
+        height: fit-content;
+        padding-block: 40px;
+    }
+    
+    .skillsBG h1 {
+        font-size: 25px;
+    }
+
+    .skillContainer {
+        padding: 0 10px;
+    }
+    .skillContainer li {
+        /* padding: 10px; */
+    }
+}
+
+/* ABOUT */
+
 .aboutBG {
-        background-color: rgb(255, 255, 255);
+    align-content: center;;
+    background-color: rgb(255, 255, 255);
 }
 
 .aboutContainer {
@@ -184,25 +290,81 @@
 }
 
 .aboutMeBio {
-    text-align: right;
-    align-items: center;
-    justify-content: center;
+    width: 90%;
+    text-align: left;
     display: flex;
-    margin-right: 40px;
+    padding-inline: 50px;
 }
 
 .aboutMeImg {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 80vh;
-    width: 80%;
+    /* padding-top: 0px; */
+    /* height: 80vh; */
+    /* width: 80%; */
 }
 
 .aboutImg {
-    height: 75%;
+    /* height: 80%; */
+    /* width: 80%; */
     border-radius: 10px;
 }
+
+@media screen and (max-width: 1200px) {
+    .aboutMeBio p {
+        font-size: 20px;
+    }
+
+    .aboutMeImg {
+        justify-content: center;
+    }
+
+    .aboutImg {
+        height: 80%;
+        width: 80%;
+    }
+}
+
+@media (max-width: 980px) {
+
+    .aboutMeImg {
+        justify-content: center;
+    }
+
+    .aboutImg {
+        height: 80%;
+        width: 80%;
+    }
+}
+
+@media (max-width: 780px) {
+    .aboutBG {
+        height: fit-content;
+        padding-block: 40px;
+    }
+    .aboutContainer {
+        flex-direction: column;
+    }
+
+    .aboutMeBio {
+        padding-inline: 30px;
+        margin-top: -40px;
+    }
+    
+    .aboutMeImg {
+        margin-top: 30px;
+        align-items: center;
+    }
+
+    .aboutImg {
+        height: 350px;
+        width: 270px;
+    }
+
+    
+}
+
+/* CONTACT */
 
 .contactBG {
     background-color: rgb(255, 222, 222);
@@ -211,6 +373,7 @@
 .contactContainer {
     display: flex;
     margin-top: 50px;
+    padding-bottom: 50px;
 }
 
 .contactText {
@@ -243,10 +406,10 @@
     font-size: 3xl;
     font-weight: bold;
     line-height: 1.4;
-    color: #101828;
-    @media (prefers-color-scheme: dark) {
+    color: #000000;
+    /* @media (prefers-color-scheme: dark) {
         color: #d1d5dc; 
-    }
+    } */
 }
 
 .contactInput {
@@ -271,4 +434,9 @@
     text-align: center;
     color: white;
     border-radius: 8px;
+}
+
+.footerBG {
+    background-color: #b91b1b;
+    color: #ffffff;
 }
