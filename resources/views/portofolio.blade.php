@@ -125,7 +125,7 @@
     <!-- About -->
     <section class="h-screen aboutBG">
         <div class="wrapper">
-            <h1 class="text-4xl font-bold text-center pb-20">About Me</h1>
+            <h1 class="text-4xl font-bold text-center pb-5">About Me</h1>
             <div class="aboutContainer">
                 <div class="aboutMeBio">
                     <p class="text-2xl p-2">

@@ -305,8 +305,8 @@
 }
 
 .aboutImg {
-    /* height: 80%; */
-    /* width: 80%; */
+    height: 300px;
+    width: 270px;
     border-radius: 10px;
 }
 
@@ -319,29 +319,41 @@
         justify-content: center;
     }
 
-    .aboutImg {
-        height: 80%;
-        width: 80%;
+    .aboutContainer {
+        margin-right: 50px;
     }
 }
 
 @media (max-width: 980px) {
+    .aboutBG {
+        height: fit-content;
+        padding-block: 40px;
+    }
+
+
+    .aboutBG h1 {
+        padding-top: 50px;
+    }
 
     .aboutMeImg {
         justify-content: center;
     }
 
     .aboutImg {
-        height: 80%;
-        width: 80%;
+        height: 300px;
+        width: 270px;
+    }
+
+    .aboutMeBio {
+        padding-top: 20px;
     }
 }
 
 @media (max-width: 780px) {
-    .aboutBG {
-        height: fit-content;
-        padding-block: 40px;
+    .aboutBG h1 {
+        font-size: 25px;
     }
+
     .aboutContainer {
         flex-direction: column;
     }
@@ -360,13 +372,12 @@
         height: 350px;
         width: 270px;
     }
-
-    
 }
 
 /* CONTACT */
 
 .contactBG {
+    height: fit-content;
     background-color: rgb(255, 222, 222);
 }
 
@@ -439,4 +450,36 @@
 .footerBG {
     background-color: #b91b1b;
     color: #ffffff;
+}
+
+@media screen and (max-width: 1200px) {
+    .contactInput {
+        width: 80%;
+    }
+}
+
+@media (max-width: 980px) {
+
+}
+
+@media (max-width: 780px) {
+
+    .contactContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contactText {
+        width: 80%;
+        text-align: justify;
+        padding-right: 0;
+    }
+
+    .contactForm {
+        width: 80%;
+    }
+
+    .contactInput {
+        width: 100%;
+    }
 }
