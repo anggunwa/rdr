@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link type="text/css" rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="icon" href="./img/arthursquare.png" type="image/png">
     @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/css/style.css'])
 </head>
 <body>
@@ -195,7 +196,7 @@
     <section>
         <footer class="footerBG">
             <div class="wrapper">
-                <p class="text-center p-5">The content provided is for admin's educational purposes only in understanding web development.</p>
+                <p class="text-center p-5">Disclaimer: This website is for educational purposes only. Red Dead Redemption 2 and all related characters and assets are the property of Rockstar Games.</p>
             </div>
     </section>
 </body>

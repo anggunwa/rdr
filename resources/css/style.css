@@ -284,16 +284,15 @@
 .aboutContainer {
     display: flex;
     flex-direction: row;
-    align-content: center;
-    justify-content: center;
+    align-items: center;
     height: 100%;
 }
 
 .aboutMeBio {
     width: 90%;
-    text-align: left;
+    text-align: justify;
     display: flex;
-    padding-inline: 50px;
+    padding-right: 50px;
 }
 
 .aboutMeImg {
@@ -318,10 +317,10 @@
     .aboutMeImg {
         justify-content: center;
     }
-
+/* 
     .aboutContainer {
         margin-right: 50px;
-    }
+    } */
 }
 
 @media (max-width: 980px) {
@@ -352,10 +351,12 @@
 @media (max-width: 780px) {
     .aboutBG h1 {
         font-size: 25px;
+        padding-bottom: 50px;
     }
 
     .aboutContainer {
         flex-direction: column;
+        /* align-items: center; */
     }
 
     .aboutMeBio {
@@ -453,16 +454,21 @@
 }
 
 @media screen and (max-width: 1200px) {
+    .contactText {
+        padding-inline: 50px;
+    }
     .contactInput {
         width: 80%;
     }
 }
 
 @media (max-width: 980px) {
-
 }
 
 @media (max-width: 780px) {
+    .contactBG h1 {
+        font-size: 25px;
+    }
 
     .contactContainer {
         flex-direction: column;
@@ -473,6 +479,11 @@
         width: 80%;
         text-align: justify;
         padding-right: 0;
+        padding-inline: 0;;
+    }
+
+    .contactText p {
+        font-size: 20px
     }
 
     .contactForm {
